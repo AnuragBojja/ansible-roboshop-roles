@@ -19,11 +19,11 @@
     state: present
 
 - name: check database table exiest or not
-  ansible.builtin.command: mongosh --host {{mongodb_host}} --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
+  ansible.builtin.command: mongosh --host {{MONGODB_HOST}} --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
   register: catalouge_output
 
 - name: load database 
-  ansible.builtin.shell: mongosh --host {{mongodb_host}} </app/db/master-data.js
+  ansible.builtin.shell: mongosh --host {{MONGODB_HOST}} </app/db/master-data.js
   when: catalouge_output.stdout | int < 0
 
 - name: systemd 

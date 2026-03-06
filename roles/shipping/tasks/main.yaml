@@ -22,8 +22,8 @@
     name: all
     target: "{{item}}"
     login_host: "{{MYSQL_HOST}}"
-    login_password: "{{mysql_pass}}"
-    login_user: "{{mysql_user}}" 
+    login_password: "{{MYSQL_PASS}}"
+    login_user: "{{MYSQL_USER}}" 
   loop:
   - /app/db/schema.sql
   - /app/db/app-user.sql
