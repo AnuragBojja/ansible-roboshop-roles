@@ -1,0 +1,9 @@
+mongodb_host: mongodb.anuragaws.shop
+rabbitmq_host: rabbitmq.anuragaws.shop
+redis_host: redis.anuragaws.shop
+mysql_host: mysql.anuragaws.shop
+catalogue_host: catalogue.anuragaws.shop
+user_host: user.anuragaws.shop
+cart_host: cart.anuragaws.shop
+payment_host: payment.anuragaws.shop
+shipping_host: shipping.anuragaws.shop
