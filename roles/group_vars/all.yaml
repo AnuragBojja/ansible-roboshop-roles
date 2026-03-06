@@ -7,3 +7,4 @@ user_host: user.anuragaws.shop
 cart_host: cart.anuragaws.shop
 payment_host: payment.anuragaws.shop
 shipping_host: shipping.anuragaws.shop
+MYSQL_HOST: mysql.anuragaws.shop
