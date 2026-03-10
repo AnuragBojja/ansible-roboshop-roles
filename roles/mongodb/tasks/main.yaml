@@ -1,14 +1,14 @@
-- name: app setup {{ service_name }}
+- name: app setup mongodb
   ansible.builtin.import_role:
     name: common
     tasks_from: logfile.yaml
 
-- name: copy {{ service_name }} repo
+- name: copy mongodb repo
   ansible.builtin.copy:
     src: mongo.repo
     dest: /etc/yum.repos.d/mongo.repo
   
-- name: install {{ service_name }}
+- name: install mongodb
   ansible.builtin.dnf:
     name: mongodb-org
     state: present
@@ -19,7 +19,7 @@
     regexp: "127.0.0.1"
     replace: "0.0.0.0"
 
-- name: start and enable {{ service_name }}
+- name: start and enable mongodb
   ansible.builtin.service:
     name: mongod
     state: restarted
