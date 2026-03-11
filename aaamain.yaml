@@ -1,5 +1,5 @@
-- name: "setup {{ service_name }} server"
-  hosts: "{{ service_name }}"
-  become: yes
-  roles:
-  - "{{ service_name }}"
+# - name: "setup {{ service_name }} server"
+#   hosts: "{{ service_name }}"
+#   become: yes
+#   roles:
+#   - "{{ service_name }}"
