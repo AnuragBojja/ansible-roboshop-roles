@@ -1,0 +1,8 @@
+- name: dynamic inventory
+  hosts: dynamic_frontend
+  become: yes
+  tasks:
+  - name: install nginx
+    dnf:
+     name: nginx
+     state: present
