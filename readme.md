@@ -18,16 +18,16 @@ This repository is a role-based Ansible implementation for Roboshop. It uses `ma
 
 ## Execution Pattern
 ```bash
-ansible-playbook -i inventory.ini main.yaml -e service_name=mongodb
-ansible-playbook -i inventory.ini main.yaml -e service_name=redis
-ansible-playbook -i inventory.ini main.yaml -e service_name=mysql
-ansible-playbook -i inventory.ini main.yaml -e service_name=rabbitmq
-ansible-playbook -i inventory.ini main.yaml -e service_name=catalogue
-ansible-playbook -i inventory.ini main.yaml -e service_name=user
-ansible-playbook -i inventory.ini main.yaml -e service_name=cart
-ansible-playbook -i inventory.ini main.yaml -e service_name=shipping
-ansible-playbook -i inventory.ini main.yaml -e service_name=payment
-ansible-playbook -i inventory.ini main.yaml -e service_name=frontend
+ansible-playbook -i inventory.ini main.yaml -e "service_name=mongodb"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=redis"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=mysql"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=rabbitmq"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=catalogue"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=user"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=cart"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=shipping"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=payment"
+ansible-playbook -i inventory.ini main.yaml -e "service_name=frontend"
 ```
 
 ## Documentation Index
